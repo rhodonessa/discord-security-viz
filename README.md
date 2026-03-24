@@ -2,7 +2,7 @@
 
 security audit dashboard for discord servers. loads json dumps of server infrastructure and maps out attack surfaces, privilege escalation paths, and permission misconfigurations.
 
-nothing else does this. discord's built-in tools show one role at a time with no export. audit bots spit out text. permission calculators give you an integer. this tool shows you the actual graph of who-can-do-what-to-where, interactively.
+discord's built-in tools show one role at a time with no export. audit bots spit out text. permission calculators give you an integer. this tool shows you the actual graph of who-can-do-what-to-where, interactively.
 
 ## what's in here
 
@@ -43,3 +43,6 @@ copy `DiscordSecurityVisualizer.jsx` to `src/`, import it in `App.jsx`, `npm run
 - d3-force with live charge control and auto-fit zoom
 - everything runs client-side, nothing phones home
 - tested with 945kb dumps (330 channels, 247 roles, 58 cached members)
+
+# License
+MIT
