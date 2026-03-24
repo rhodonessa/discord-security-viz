@@ -1,0 +1,103 @@
+{
+  "_meta": {
+    "timestamp": "2026-01-01T00:00:00.000Z",
+    "guild_id": "000000000000000000",
+    "guild_name": "Example Server"
+  },
+  "guild": {
+    "id": "000000000000000000",
+    "name": "Example Server",
+    "description": null,
+    "owner_id": "111111111111111111",
+    "features": [],
+    "vanity_url_code": null,
+    "verification_level": 2,
+    "explicit_content_filter": 1,
+    "mfa_level": 0,
+    "nsfw_level": 0,
+    "premium_tier": 0,
+    "premium_subscriber_count": 0,
+    "preferred_locale": "en-US",
+    "max_members": -1,
+    "system_channel_id": null,
+    "rules_channel_id": null,
+    "safety_alerts_channel_id": null,
+    "afk_channel_id": null,
+    "afk_timeout": 300
+  },
+  "summary": {
+    "total_channels": 5,
+    "text_channels": 3,
+    "voice_channels": 1,
+    "categories": 1,
+    "forums": 0,
+    "stage_channels": 0,
+    "announcement_channels": 0,
+    "hidden_channels": 1,
+    "total_roles": 3,
+    "admin_roles": 1,
+    "dangerous_roles": 1,
+    "managed_roles": 1,
+    "cached_members": 2,
+    "cached_bots": 1,
+    "admin_bots": 1,
+    "admin_users": 1
+  },
+  "channel_tree": [
+    { "category": "General", "category_id": "100000000000000001", "channels": ["# general", "# rules"] }
+  ],
+  "security_analysis": {
+    "total_issues": 2,
+    "critical": 1,
+    "high": 1,
+    "medium": 0,
+    "issues": [
+      { "severity": "CRITICAL", "category": "PRIVILEGES", "finding": "Role \"Admin\" has ADMINISTRATOR (1 cached members with this role)" },
+      { "severity": "HIGH", "category": "ESCALATION", "finding": "Role \"Moderator\" (pos 5/10) has MANAGE_ROLES, potential privilege escalation" }
+    ]
+  },
+  "roles": [
+    {
+      "id": "000000000000000000", "name": "@everyone", "position": 0, "color": 0,
+      "colorString": null, "hoist": false, "mentionable": false, "managed": false,
+      "icon": null, "unicodeEmoji": null, "tags": null,
+      "permissions_raw": "1071698529857", "permissions_decoded": { "VIEW_CHANNEL": true, "SEND_MESSAGES": true },
+      "dangerous_permissions": [], "is_dangerous": false, "has_admin": false
+    },
+    {
+      "id": "200000000000000001", "name": "Admin", "position": 10, "color": 15158332,
+      "colorString": "#e74c3c", "hoist": true, "mentionable": false, "managed": false,
+      "icon": null, "unicodeEmoji": null, "tags": null,
+      "permissions_raw": "8", "permissions_decoded": { "ADMINISTRATOR": true },
+      "dangerous_permissions": ["ADMINISTRATOR"], "is_dangerous": true, "has_admin": true
+    },
+    {
+      "id": "200000000000000002", "name": "ExampleBot", "position": 8, "color": 0,
+      "colorString": null, "hoist": false, "mentionable": false, "managed": true,
+      "icon": null, "unicodeEmoji": null, "tags": { "bot_id": "300000000000000001" },
+      "permissions_raw": "8", "permissions_decoded": { "ADMINISTRATOR": true },
+      "dangerous_permissions": ["ADMINISTRATOR"], "is_dangerous": true, "has_admin": true
+    }
+  ],
+  "channels": [
+    {
+      "id": "100000000000000001", "name": "General", "type": "CATEGORY", "type_raw": 4,
+      "position": 0, "parent_id": null, "topic": null, "nsfw": false, "slowmode": 0,
+      "permission_overwrites": [], "has_dangerous_overwrites": false
+    },
+    {
+      "id": "100000000000000002", "name": "general", "type": "TEXT", "type_raw": 0,
+      "position": 0, "parent_id": "100000000000000001", "topic": "General chat", "nsfw": false, "slowmode": 0,
+      "permission_overwrites": [], "has_dangerous_overwrites": false
+    }
+  ],
+  "hidden_channels": [],
+  "members": [
+    {
+      "id": "111111111111111111", "username": "serverowner", "display_name": "Server Owner",
+      "bot": false, "roles": [{ "id": "200000000000000001", "name": "Admin" }],
+      "joined_at": "2025-01-01T00:00:00.000Z", "premium_since": null, "status": "online", "is_admin": true
+    }
+  ],
+  "bots": []
+}

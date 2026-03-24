@@ -1,0 +1,6 @@
+*_dump_*.json
+node_modules/
+.DS_Store
+test-app/
+package.json
+package-lock.json
